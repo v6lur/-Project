@@ -1,0 +1,10 @@
+﻿Codeacademy:
+(https://www.codecademy.com/courses/learn-python/lessons/python-syntax/exercises/bringing-it-all-together?action=lesson_resume)
+
+
+*Mõte: Reddit bot
+(http://pythonforengineers.com/build-a-reddit-bot-part-1/)
+
+
+*Head tektsipõhine näide tekstimängust:
+(https://gist.github.com/dougmcnally/06fa0533a893b6e85222bb4f4645940f)
