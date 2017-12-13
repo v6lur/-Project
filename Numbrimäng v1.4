@@ -1,0 +1,109 @@
+#Numbri ära arvamise mäng. Arvuti genereerib arvu 1-5 ja sa pead 3 korraga ära arvama(v1.4)
+
+import time
+import sys
+import random
+import os
+
+def läbi ():
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    print("                     *MÄNG LÄBI*")
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    time.sleep(1)
+    print("              (* Õige vastus oli:",computernum,"*)")
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    time.sleep(3)
+    raise SystemExit
+
+print("<*----------------------------------------------------*>")
+print("Tervist! Kuidas ma teid kutsuda võin?")
+nimi = input("Tere! Minu nimi on: ")
+time.sleep(0.5)
+print("<*----------------------------------------------------*>")
+print("Tere tulemast minu mängu", nimi, "!" )
+print("Sinu ülesanne on ära arvata number, mille peale ma mõtlen.")
+print("VIHJE: See on 1 ja 5 vahel (1 ja 5 kaasaarvatud)")
+print("                   (3 PROOVI JÄREL)")
+print("<*----------------------------------------------------*>")
+time.sleep(2.5)
+
+computernum = random.randrange(1, 5)
+
+while True:
+    try:
+        arv1 = int(input('HMM.. Minu esimene oletus on:'))
+    except ValueError:
+        print("Kas see on sinu meelest arv?")
+        print("Tobujuss..")
+        time.sleep(1.5)
+        continue
+    else:
+        break
+if int(arv1) == computernum:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Õnneseen! Hästi tehtud.")
+    time.sleep(1)
+    läbi()
+else:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Vale vastus!")
+    time.sleep(1)
+    print("Proovi uuesti!")
+    print("                   (2 PROOVI JÄREL)")
+    time.sleep(0.5)
+    print("<*----------------------------------------------------*>")
+    
+while True:
+    try:
+        arv2 = int(input("Kurat! Minu teine oletus on:"))
+    except ValueError:
+        print("Kas see on sinu meelest arv?")
+        print("Tobujuss..")
+        time.sleep(1.5)
+        continue
+    else:
+        break
+
+if int(arv2) == computernum:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Eino kuradikurat, SA VÕITSID!")
+    time.sleep(1)
+    läbi()
+else:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Vale!")
+    time.sleep(1)
+    print("Proovi uuesti!")
+    print("                   (1 PROOV JÄREL)")
+    time.sleep(1)
+    print("<*----------------------------------------------------*>")
+    
+while True:
+    try:
+        arv3 = int(input("Oi isver! Minu viimane oletus on:"))
+    except ValueError:
+        print("Kas see on sinu meelest arv?")
+        print("Tobujuss..")
+        time.sleep(1.5)
+        continue
+    else:
+        break
+
+if int(arv3) == computernum:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Üle noatera! Sa võitsid!")
+    time.sleep(1)
+    läbi()
+else:
+    print("<*----------------------------------------------------*>")
+    time.sleep(0.5)
+    print("Vale!")
+    time.sleep(1)
+    print("Sa ei olegi nii kaval, kui sa paistad. :)")
+    time.sleep(1)
+    läbi()
