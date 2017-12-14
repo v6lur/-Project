@@ -1,19 +1,27 @@
-#Numbri ära arvamise mäng. Arvuti genereerib arvu 1-5 ja sa pead 3 korraga ära arvama(v1.4)
+#Numbri ära arvamise mäng. Arvuti genereerib arvu 1-5 ja sa pead 3 korraga ära arvama(v1.5)
 
-import time
 import sys
 import random
 import os
+import restart
 
 def läbi ():
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
-    print("                     *MÄNG LÄBI*")
+    print("            * MÄNG LÄBI. Võitja:", nimi,"*")
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
     time.sleep(1)
     print("              (* Õige vastus oli:",computernum,"*)")
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
     time.sleep(3)
-    raise SystemExit
+
+def arvuti ():
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    print("             *MÄNG LÄBI. Võitja: Arvuti*")
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    time.sleep(1)
+    print("              (* Õige vastus oli:",computernum,"*)")
+    print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
+    time.sleep(3)
 
 print("<*----------------------------------------------------*>")
 print("Tervist! Kuidas ma teid kutsuda võin?")
@@ -106,4 +114,4 @@ else:
     time.sleep(1)
     print("Sa ei olegi nii kaval, kui sa paistad. :)")
     time.sleep(1)
-    läbi()
+    arvuti()
