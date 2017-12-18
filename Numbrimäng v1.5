@@ -3,7 +3,7 @@
 import sys
 import random
 import os
-import restart
+import time
 
 def läbi ():
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
@@ -13,6 +13,7 @@ def läbi ():
     print("              (* Õige vastus oli:",computernum,"*)")
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
     time.sleep(3)
+    raise SystemExit
 
 def arvuti ():
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
@@ -22,6 +23,7 @@ def arvuti ():
     print("              (* Õige vastus oli:",computernum,"*)")
     print("<*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈*≈>")
     time.sleep(3)
+    raise SystemExit
 
 print("<*----------------------------------------------------*>")
 print("Tervist! Kuidas ma teid kutsuda võin?")
@@ -115,3 +117,4 @@ else:
     print("Sa ei olegi nii kaval, kui sa paistad. :)")
     time.sleep(1)
     arvuti()
+
